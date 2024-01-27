@@ -1,0 +1,28 @@
+body {
+    background-image: url(../s17Qi.jpg);
+    align-items: center;
+    display: flex;
+}
+.retangle-box{
+    display: flex;
+    margin: auto;
+    background-color: rgb(17, 3, 143);
+    border-radius: 25px;
+    height: 400px;
+    width: 600px;
+    
+}
+.retangulo-2{
+    background-color: beige;
+    margin-top: 105px;
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    border-radius: 25px;
+    display: flex;
+   
+}
+h1{
+    color: rgb(0, 0, 0);
+    margin: auto;
+}
