@@ -6,16 +6,13 @@
 }
 
 body {
-    background-image: url('/barbearia2.1/img/fundo.jfif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: black;
     color: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    justify-items: center;
+    object-position: center;
     min-height: 100vh;
 }
 
@@ -37,10 +34,9 @@ body {
 
 .card-container {
     display: flex;
-    
-    
     flex-direction: column;
-    gap: 20px;
+    justify-items: center;
+    object-position: center;
     width: 100%;
 }
 
@@ -48,10 +44,11 @@ body {
     background-color: rgba(85, 65, 65, 0.801);
     border-radius: 15px;
     padding: 20px;
-    max-width: 300px;
+    width: 500px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    margin-top: 10px;
 }
 
 .card:hover {
