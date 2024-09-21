@@ -1,25 +1,22 @@
-//faça  aparecer uma mensagem de alerta 
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slides img');
+const totalSlides = slides.length;
 
-alert("bora jogar !");
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
 
-// crie uma variavel para armazenar o numero do jogo
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+}
 
-let numeroSecreto = 29;
+setInterval(nextSlide, 3000); // Muda a imagem a cada 3 segundos
 
-// mostre o numero secreto no console.log
-
-console.log (numeroSecreto)
-
-// crie outra variavel para colocar o numero digitado no prompt
-
-let chute = prompt('escolha um número de 1 a 100');
-
-// se o chute for igual ao numerosecreto 
-
-if (chute == numeroSecreto) {
-
-    // então execute a menssagem 
-    alert (`você acertou o número secreto ${numeroSecreto}`);
-
-} // se não mostre essa menssagem
-else alert ('vc errou o número');
+// Inicializa o slider
+showSlide(currentIndex);
