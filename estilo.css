@@ -1,37 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
     font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #c7c0ac;
 }
 
-body {
-    background-color: #2c2c2c;
-    font-family: Arial, sans-serif;
-    margin: 0;
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     padding: 0;
+}
+
+button{
+    margin: 10px;
+    height: 30px;
+    border-radius: 90px;
+    background-color: rgba(77, 36, 33, 0.432);
+    color: antiquewhite;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.opcao-2 {
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    color: #fff;
+    justify-items: center;
 }
 
-.header {
-    background-color: #3b2c16;
-    color: white;
-    padding: 30px;
-    text-align: center;
+
+.slider {
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-bottom: 3px solid #ffba08;
+    overflow: hidden;
+    position: relative;
 }
 
-.header h1 {
-    font-size: 2.5em;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+.slides {
+    margin: 30px;
+    background-color: rgba(61, 47, 18, 0.651);
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center; /* Centraliza as imagens */
+}
+
+.slides img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+.slides img.active {
+    display: block;
 }
 
 .card-container {
@@ -39,7 +72,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+    
 }
 
 .card {
@@ -100,7 +133,6 @@ body {
 button, a {
     text-decoration: none;
     text-align: center;
-    padding: 12px;
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
@@ -130,4 +162,35 @@ button:hover {
     .header h1 {
         font-size: 2em;
     }
+}
+
+.final{
+    background-color: #3b2c16;
+    color: white;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #ffba08;
+}
+
+.rodape {
+    background-color: #2c3e50; /* Cor de fundo escura para um visual elegante */
+    color: #ecf0f1; /* Cor do texto clara para contraste */
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #e74c3c; /* Linha superior para destaque */
+    font-family: 'Arial', sans-serif;
+}
+
+.rodape h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Texto em maiúsculas para um visual mais forte */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+}
+
+.rodape p {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold; /* Texto em negrito para destaque */
 }
